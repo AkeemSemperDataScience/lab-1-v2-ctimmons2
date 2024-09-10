@@ -35,10 +35,13 @@ def lab1Question4(file_name):
     
     with open(file_name) as f:
         m_string = f.read()
+        print(m_string)
     for my_num in m_string:
         if my_num.isdigit():
             list_of_nums += my_num
     return list_of_nums
+
+lab1Question4('github/test_file2.txt')
 
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
