@@ -34,8 +34,8 @@ def lab1Question4(file_name):
     list_of_nums = []
     
     with open(file_name) as f:
-        list_of_nums = f.readlines()
-        print(list_of_nums)
+        list_of_nums = f.read().replace('\n', ',')
+    
     return list_of_nums
 
 lab1Question4('github/test_file2.txt')
