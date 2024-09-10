@@ -12,9 +12,7 @@ def lab1Question2(name):
     # Return None if the input is not a string
     is_odd = None
     m_length = len(name)
-    if m_length % 2:
-        is_odd = true
-    else is_odd = false
+    is_odd = bool(m_length%2)
     return is_odd
 
 def lab1Question3(input_string, input_number):
