@@ -19,7 +19,13 @@ def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
     # Return the character of the string in the index given by number.  If this index does not exist, then return -1.
     character_at = -1
-
+    if not input_string:
+        character_at = -1
+        return character_at
+    if input_number <= len(input_string):
+        character_at = input_string[input_number]
+    else:
+        character_at = -1
     return character_at
 
 def lab1Question4(file_name):
