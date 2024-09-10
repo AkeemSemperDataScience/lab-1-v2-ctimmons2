@@ -33,15 +33,20 @@ def lab1Question4(file_name):
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
     
-    with open(file_name) as f:
-        list_of_nums = f.read().replace('\n', '')
+    file1 = open(file_name,'r')
+    Lines = file1.readlines()
+    count = 0
+    for line in Lines:
+        
+        list_of_nums.append(int(line.strip()))
+        count += 1
     
-    list_of_nums = [1,2,3,4,5]
+    
     print(list_of_nums)
     return list_of_nums
 
 answer = lab1Question4('github/test_file1.txt')
-print(answer)
+
 
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
