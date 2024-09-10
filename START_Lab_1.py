@@ -32,10 +32,10 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-    my_string = 0
-    for my_string in file_name.split():
-        if my_string.isdigit():
-            list_of_nums = my_string
+    
+    for my_num in file_name:
+        if my_num.isdigit():
+            list_of_nums = my_num
     return list_of_nums
 
 def lab1Question5(list_numbers):
