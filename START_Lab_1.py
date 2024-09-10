@@ -33,7 +33,9 @@ def lab1Question4(file_name):
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
     
-    for my_num in file_name:
+    with open(file_name) as f:
+        m_string = f.read()
+    for my_num in m_string:
         if my_num.isdigit():
             list_of_nums += my_num
     return list_of_nums
