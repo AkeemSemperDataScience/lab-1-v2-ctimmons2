@@ -35,7 +35,7 @@ def lab1Question4(file_name):
     
     for my_num in file_name:
         if my_num.isdigit():
-            list_of_nums = my_num
+            list_of_nums += my_num
     return list_of_nums
 
 def lab1Question5(list_numbers):
