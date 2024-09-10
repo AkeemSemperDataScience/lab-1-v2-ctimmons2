@@ -34,11 +34,12 @@ def lab1Question4(file_name):
     list_of_nums = []
     
     with open(file_name) as f:
-        list_of_nums = f.read().replace('\n', ',')
+        list_of_nums = f.read().replace('\n', '')
     
     return list_of_nums
 
-lab1Question4('github/test_file2.txt')
+answer = lab1Question4('github/test_file1.txt')
+print(answer)
 
 def lab1Question5(list_numbers):
     # Take an input of a list of numbers
