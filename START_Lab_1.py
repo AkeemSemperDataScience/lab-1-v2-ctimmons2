@@ -33,7 +33,7 @@ def lab1Question4(file_name):
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
     [int(my_string) for my_string in file_name.split() if my_string.isdigit()]
-    list_of_nums = s
+    list_of_nums = my_string
     return list_of_nums
 
 def lab1Question5(list_numbers):
