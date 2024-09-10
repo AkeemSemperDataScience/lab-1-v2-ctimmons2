@@ -38,7 +38,7 @@ def lab1Question4(file_name):
         print(m_string)
     for my_num in m_string:
         if my_num.isdigit():
-            list_of_nums += my_num
+            list_of_nums.append(my_num)
     return list_of_nums
 
 lab1Question4('github/test_file2.txt')
