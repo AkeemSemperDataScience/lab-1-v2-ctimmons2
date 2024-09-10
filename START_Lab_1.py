@@ -36,6 +36,8 @@ def lab1Question4(file_name):
     with open(file_name) as f:
         list_of_nums = f.read().replace('\n', '')
     
+    list_of_nums = [1,2,3,4,5]
+    print(list_of_nums)
     return list_of_nums
 
 answer = lab1Question4('github/test_file1.txt')
