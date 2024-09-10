@@ -34,11 +34,8 @@ def lab1Question4(file_name):
     list_of_nums = []
     
     with open(file_name) as f:
-        m_string = f.read()
-        print(m_string)
-    for my_num in m_string:
-        if my_num.isdigit():
-            list_of_nums.append(my_num)
+        list_of_nums = f.readlines()
+        print(list_of_nums)
     return list_of_nums
 
 lab1Question4('github/test_file2.txt')
