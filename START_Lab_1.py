@@ -23,12 +23,12 @@ def lab1Question2(name):
     is_odd = bool(m_length%2)
     return is_odd
 
-answer = lab1Question2('Colin')
-print(answer)
-answer = lab1Question2('Murray')
-print(answer)
-answer = lab1Question2('')
-print(answer)
+#answer = lab1Question2('Colin')
+#print(answer)
+#answer = lab1Question2('Murray')
+#print(answer)
+#answer = lab1Question2('')
+#print(answer)
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
