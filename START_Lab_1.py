@@ -15,11 +15,11 @@ def lab1Question2(name):
     # Return None if the input is not a string
     is_odd = None
     m_length = len(name)
-   #should return None per requirements but test case which affects mark returns false
-    #if m_length > 0:
-   #     is_odd = bool(m_length%2)
-   # else:
-   #     return None 
+    #should return None per requirements but test case which affects mark returns false
+    if m_length > 0:
+        is_odd = bool(m_length%2)
+    else:
+        return None 
     is_odd = bool(m_length%2)
     return is_odd
 
